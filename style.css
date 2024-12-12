@@ -1,0 +1,330 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /*background-color: #f9f9f9;*/
+    background: linear-gradient(to right, #e0f7fa, #fff); 
+}
+
+header {
+    background: /*#4CAF50*/ hsl(214, 57%, 51%) ;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex; justify-content: space-between; align-items: center; text-align: center;
+    position: sticky; top: 0; z-index: 999;
+}
+
+header h1{
+    cursor: pointer; width: px; padding-left: 20px;
+}
+
+.menu1{
+    position: absolute; top: 0; right: 50px;
+    padding: 20px 0;
+    list-style-type: none;
+}
+
+.menu1 li {
+    display: inline-block; list-style: none;
+}
+
+.menu1 li a {
+     display: block; 
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px; font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c2f0c2;
+}
+
+.menu{
+    position: absolute; top: 0; right: 5px;
+    width: 30px; height: 30px;
+    padding: 10px; margin: 20px auto;
+    font-weight: bold;
+    display: flex;flex-direction: column;
+    justify-content: center; align-items: center;
+    cursor: pointer;
+}
+.menu:hover{
+    background-color:/* #4CAF50*/ hsl(214, 57%, 51%);
+}
+.menu::after{
+    content: "";
+    height: 3px; width: 28px; 
+    background-color: white;
+    box-shadow: 0 10px 0 white;
+    transform: translateY(-10px); transition: 0.5s;
+    position: absolute;
+}
+.menu::before{
+    content: "";
+    height: 3px; width: 28px; 
+    background-color: white;
+    transform: translateY(10px); transition: 0.5s;
+    position: absolute;
+}
+
+.hero {
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.choix{
+    display: flex; justify-content: center; align-items: center; gap: px;
+}
+
+.btn, button {
+    background: hsl(214, 57%, 51%) /* #FFD700*/;
+    color: #333;
+    padding: 10px 30px; margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover, button:hover {
+    background: hsl(214, 48%, 46%) /* #FFC107*/;
+    transform: translateY(-2px);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    border-bottom: 2px solid hsl(214, 57%, 51%) /* #4CAF50*/;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h3, span{
+    color: hsl(214, 57%, 51%) /*#4CAF50*/; font-weight: bold;
+}
+
+.service, .produits{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.service-item, .product-item, .carte {
+    border: 1px solid #ddd; border-radius: 8px;
+    padding: 15px; margin: 15px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.img, .carte img {
+    width: 100%; height: 250px;
+    border-radius: 5px;
+}
+
+
+/* book */
+.action {
+    width: 100%;
+}
+
+
+/* shop */
+.des{
+    padding: 5px 20px; opacity: 0.8; color: #666; text-align: left;
+}
+
+.titre{
+    font-weight: 900; font-size: 20px;
+    color: hsl(214, 57%, 51%) /* #4CAF50 #424144*/;
+    padding: 0 20px; text-align: left;
+}
+
+.carte .box{
+    display: flex;
+    justify-content: space-between; align-items: center;
+    padding: 20px;
+}
+
+.carte .box button{
+    font-size: 13px; font-weight: 900;
+}
+
+.carte .box .prix{
+    font-size: 20px; font-weight: bolder;  color: hsl(214, 57%, 51%)/*orange*/;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fafafa;
+}
+
+form .choix div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    max-width: 400px;
+}
+
+input:focus, textarea:focus {
+    border-color: hsl(214, 57%, 51%) /*#00796b*/;
+}
+
+
+
+
+
+
+/* footer */
+
+footer{
+    position: relative; bottom: 0; 
+    width: 100%;
+    background: #333; color: #efefef;
+}
+
+.end, .foot{
+    display: flex; justify-content: center; text-align: center; align-items: center; 
+}
+
+.end{
+    background: hsl(214, 57%, 51%) /*#4CAF50*/;
+}
+
+.end h3{
+    font-weight: 300; letter-spacing: 1px; color: white;
+}
+
+.end a{
+    text-decoration: none; 
+    color: #efefef;
+}
+
+.link a{
+    display: block; 
+    margin-bottom: 10px;
+}
+
+.adres div{
+    display: flex; justify-content: center; margin-bottom: 10px;
+}
+
+.i{
+    margin: 10px;
+    width: 20px; border-radius: 50%; 
+}
+
+.foot{
+    padding-bottom: 15px;
+}
+.foot a{
+    text-decoration: none; color: hsl(214, 57%, 51%); padding-left: 5px;
+}
+
+
+.go-top{
+    position: fixed; bottom: 15px; right: 0; width: 35px; height: 35px; 
+    display: grid;
+    place-items: center; font-size: 18px; border-radius: 10px; 
+    box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.5); opacity: 0;
+    transform: translateY(10px); visibility: hidden;
+}
+
+.go-top.active{ opacity: 0.8; transform: translateY(0); visibility: visible; }
+
+.go-top:is(:hover, :focus) { opacity: 1;}
+
+
+
+
+
+
+/* responsive */
+
+@media screen and (max-width:700px) {
+
+    .menu1{
+        top: -100px;
+    }
+    }
+    
+    .menu.active::after{
+        box-shadow: 0 0 0 white; 
+        transform: rotate(45deg);
+    }
+    .menu.active::before{
+        transform: rotate(-45deg);
+    } 
+     .menu1.responsive{ 
+        display: flex; flex-direction: column;
+        background-color: hsl(214, 57%, 51%) /* #4CAF50*/;
+        position: absolute; top: 60px; right: 1px;
+        animation: animate-menu 1s forwards;
+    }
+     .menu1.responsive li{ 
+        margin: 20px;
+        width:90px;
+    }
+    
+    @keyframes animate-menu {
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(100);
+        }
+    }
+
+
+@media screen and (max-width:600px) {
+    form {
+        max-width: 400px;
+    }
+
+    form .choix{
+        flex-direction: column; gap: -20px;
+    }
+
+    form .choix div{
+        padding: 0 30px; 
+    }
+
+}
+
+    
+    
