@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peace Shop</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="top">
+    <header>
+        <h1>Peace Shop</h1>
+        <nav>
+            <ul class="menu1">
+                <li><a href="#home">Acceuil</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#book">Livres</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="menu"></div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <h2>Bienvenue chez <span>Peace Shop</span></h2>
+            <h3>Qui sommes nous ?</h3>
+            <p> <span>Peace Shop</span> est une entreprise en ligne qui promeut la visibilité des entreprises en offrant un espace où elles peuvent présenter leurs services et produits de manière efficace.</p>
+            <p>Explorez nos services informatiques, découvrez notre boutique et plongez dans notre bibliothèque.</p>
+            <p>Nous sommes ici pour vous aider à grandir et à apprendre.</p>
+            <a href="https://www.facebook.com/messages/t/profile.php?id=61557561773928?message=bonjour%20PeaceShop" target="_blank" class="btn">Visitez notre page facebook</a>
+        </section>
+
+        <section id="service" class="hero">
+            <h2>Services Informatiques</h2>
+            <p>Nous nous occupons à vous concevoir des solutions numériques adaptées à vos moyens et besoins ; des sites web vitrines et e-commerce, blog et pages pour la visibilité de votre marque. </p>
+            <p>Découvrez nos services informatiques.</p>
+                <a href="./service.html" class="btn">Explorer maintenant</a>
+        </section>
+
+        <section id="shop" class="hero">
+            <h2>Boutique</h2>
+            <p>Découvrez notre sélection d'articles exclusifs qui pourraient vous intéresser. Des Appareils Électroménagers, des vêtements et Accessoires, des Chaussures et bien d'autres articles.</p>
+                <a href="./shop.html" class="btn">Visitez notre Boutique</a>
+        </section>
+
+        <section id="book" class="hero">
+            <h2>Bibliothèque</h2>
+            <p>
+                Que vous cherchiez à améliorer votre confiance en vous, à mieux gérer votre temps, ou à trouver votre passion, vous êtes au bon endroit. Peace Books met à votre disposition tout ceux dont vous avez besoin pour assouvir votre désire.
+            </p>
+            <p>Découvrez notre sélection.</p>
+                <a href="./book.html" class="btn">Voir les titres disponibles</a>
+                
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <p>Laissez-nous un message pour plus de renseignements .</p>
+            <form action="https://formspree.io/f/xovqzylo" method="post">
+                <div class="choix">
+                    <div class="">
+                        <label for="nom">Nom:</label>
+                <input type="text" name="nom" id="nom" required>
+
+                <label for="tel">Telephone:</label>
+                <input type="tel" name="tel" id="tel" required>
+
+                <label for="adress">Ville:</label>
+                <input type="text" name="adress" id="adress" required>
+                    </div>
+
+                    <div class="">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="7" required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+
+        <div class="end">
+            <div class="link">
+                <h3>USEFUL LINKS</h3>
+                <a href="./index.html">About</a>
+                <a href="./service.html">Services</a>
+                <a href="./shop.html">Shop</a>
+                <a href="./book.html">Books</a>
+            </div>
+    
+    
+            <div class="adres">
+                <h3>CONTACT</h3>
+                <div><a href="tel:+2290143955625">+2290143955625</a></div>
+                <div><a href="mailto:peace0shop@gmail.com ">peace0shop@gmail.com</a></div>
+                <div>Cotonou, abomey-calavi, Bénin</div>
+                <div class="social">
+                    <a href="https://www.facebook.com/J.gansouvou"><img src="./images/Facebook.png" alt="facebook" class="i"> </a>
+                    <a href="https://www.linkedin.com/in/juliengansouvou"><img src="./images/linkedin1.jpg" alt="linkedin" class="i"> </a>
+                    <a href="https://t.me/juliengansouvou"><img src="./images/telegram.jpg" alt="telegram" class="i"> </a>
+                    <a href="https://wa.me/+22943955625"><img src="./images/WhatsApp.png" alt="WhatsApp" class="i"> </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="foot">&copy; 2024 <a href="./index.html">Peace Shop</a>. Tous droits réservés.</p>
+    
+    </footer>
+
+    <a href="#top" class="go-top active" data-go-top> <img src="./images/go.png" alt="" class="i"> </a>
+   
+    <script>
+        var toggle_menu = document.querySelector('.menu');
+        var menu = document.querySelector('.menu1');
+
+        toggle_menu.onclick= function(){
+            toggle_menu.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+    </script>
+
+
+</body>
+</html>
